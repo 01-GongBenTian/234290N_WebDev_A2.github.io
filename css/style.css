@@ -572,7 +572,7 @@ div#miniGame>div#creatureIntro>div>p,
 div#miniGame>div#gameStatus>div>p{
 
     /* set font size  */
-    font-size: 2vw;
+    font-size: 3vw;
 
     /* set font color  */
     color: black;
@@ -599,7 +599,6 @@ div#miniGame>div#gameStatus>div>p:first-of-type{
 div#miniGame>div#gameStatus>div#progress>p:nth-child(2){
 
     width: 0%;
-    height: 3vw;
 
     background: gold;
 
@@ -737,11 +736,11 @@ div#miniGame>div#gameField>div#evoluteButtons{
 /* set the style for evolute button  */
 div#miniGame>div#gameField>div#evoluteButtons>button{
 
-    width: 35%;
-    height: 37.5%;
+    width: 40%;
+    height: 55%;
 
-    margin-top: 10.125%;
-    font-size: 1.5vw;
+    margin-top: 8%;
+    font-size: 2.5vw;
 }
 
 div#miniGame>div#gameField>div#evoluteButtons>button:first-child{
@@ -1152,11 +1151,37 @@ footer {
         margin-left: 5%;
     }
 
+    div#miniGame>div#creatureIntro{
+    
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
     div#miniGame>div#gameStatus>div{
 
+        width: 28%;
+
         /* set the float and left some margin between  */
-        float: right;
-        margin-right: 5%;
+        float: inline-start;
+        margin: 0;
+
+    }
+
+    div#miniGame>div#gameStatus{
+
+        display: flex;
+
+        justify-content: space-evenly;
+        
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+        
+        grid-column-start: 1;
+        grid-column-end: 4;
 
     }
     
@@ -1169,18 +1194,15 @@ footer {
     }
     
     div#miniGame>div#creatureIntro>div>p,
-    div#miniGame>div#gameStatus>div>p{
+    div#miniGame>div#gameStatus>div>p,
+    div#miniGame>div#gameStatus>div#progress>p:nth-child(2){
     
         /* set to a fixed font size */
         font-size: 24px;
+
+        height: auto;
     
         border: 2px solid black;
-    }
-    
-    div#miniGame>div#gameStatus>div#progress>p:nth-child(2){
-    
-        /* set a max height to prevent become too big */
-        max-height: 24px;
     }
     
     div#miniGame>div#gameField{
@@ -1192,6 +1214,15 @@ footer {
         border: 2px solid black;
     }
     
+    div#miniGame>div#creatureImage{
+
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+    }
+
     div#miniGame>div#creatureImage{
     
         /* set a max size to prevent become too big */
@@ -1223,7 +1254,7 @@ footer {
     div#miniGame>div#gameField>div#evoluteButtons>button{
 
         /* set to a fixed font size */
-        font-size: 14px;
+        font-size: 24px;
     }
 }
 
