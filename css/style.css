@@ -5,6 +5,8 @@
 
     /* clear the style of the list */
     list-style-type: none;
+
+    overflow-x: hidden;
 }
 
 /* change the font size of h1  */
