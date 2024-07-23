@@ -1223,7 +1223,7 @@ footer {
     div#miniGame>div#gameField>div#evoluteButtons>button{
 
         /* set to a fixed font size */
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
