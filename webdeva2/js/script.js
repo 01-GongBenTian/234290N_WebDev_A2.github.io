@@ -789,4 +789,8 @@ function calMiniGameMargin() {
     if (emptySpace > 0) {
         sections[3].style.marginLeft = ((window.innerWidth - 1000) / 2) + "px";
     }
+    else
+    {
+        sections[3].style.marginLeft = 0;
+    }
 }
